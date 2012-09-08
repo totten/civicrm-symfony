@@ -1,0 +1,17 @@
+# Emacs backup and lock files
+*~
+.#*
+
+# Mac OSX files
+*.swp
+.DS_Store
+\#*\#
+
+/web/uploads/
+/web/bundles/
+/app/bootstrap*
+/app/cache/*
+/app/logs/*
+/vendor/
+/app/config/parameters.ini
+/app/config/parameters.yml

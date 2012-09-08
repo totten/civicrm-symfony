@@ -1,3 +1,16 @@
+CiviFrameworkBundle:
+    resource: "@CiviFrameworkBundle/Resources/config/routing.xml"
+    prefix:   /civicrm
+
+CiviAdminBundle:
+    resource: "@CiviAdminBundle/Controller/"
+    type:     annotation
+    prefix:   /civicrm/admin
+
+CiviDrupalBundle:
+    resource: "@CiviDrupalBundle/Resources/config/routing.xml"
+    prefix:   /
+
 # Internal routing configuration to handle ESI
 #_internal:
 #    resource: "@FrameworkBundle/Resources/config/routing/internal.xml"

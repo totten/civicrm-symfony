@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <!--
+    <parameters>
+        <parameter key="civi_framework.example.class">Civi\FrameworkBundle\Example</parameter>
+    </parameters>
+
+    <services>
+        <service id="civi_framework.example" class="%civi_framework.example.class%">
+            <argument type="service" id="service_id" />
+            <argument>plain_value</argument>
+            <argument>%parameter_name%</argument>
+        </service>
+    </services>
+
+    <parameters>
+        <parameter key="router.options.matcher_class">Civi\FrameworkBundle\UrlMatcher</parameter>
+        <parameter key="router.options.matcher_base_class">Civi\FrameworkBundle\UrlMatcher</parameter>
+    </parameters>
+
+    <services>
+        <service id="civi_framework.controller_resolver" class="Civi\FrameworkBundle\CiviControllerResolver">
+            <argument type="service" id="default.controller_resolver"/>
+        </service>
+    </services>
+    -->
+
+</container>

@@ -23,20 +23,11 @@ class RequireOnceCommand extends ContainerAwareCommand
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         $civicrm = $this->getContainer()->get('civi_framework.civicrm');
-        /*
-        global $civicrm_root;
-        $finder = new Finder();
-        $finder->name('*.php');
-        foreach ($finder->in("$civicrm_root/CRM") as $file) {
-          print "[$file]\n";
-          require_once $file;
-        }
-        */
         $file = $input->getArgument("file");
         try {
             require_once $file;
         } catch (\ErrorException $e) {
-            print "\nFILE: $file\n";
+            $output->writeln("\nFILE: $file");
             $output->writeln($e->getMessage());
         }
 

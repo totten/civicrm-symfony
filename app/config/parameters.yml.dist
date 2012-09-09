@@ -13,3 +13,5 @@ parameters:
 
     locale:            en
     secret:            ThisTokenIsNotSoSecretChangeIt
+
+    civicrm_settings_path: /FIXME/PATH/TO/civicrm.settings.php

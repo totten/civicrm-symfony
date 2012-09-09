@@ -4,10 +4,9 @@ CiviCRM-Symfony Integration
 This is an experimental codebase to facilitate integration of CiviCRM and
 Symfony. It is currently being tested with Drupal 7.
 
-1. Install CiviCRM on Drupal per usual (using http://svn.civicrm.org/civicrm/branches/trunk.s2)
+1) Install CiviCRM on Drupal per usual (using http://svn.civicrm.org/civicrm/branches/trunk.s2)
 
-2. Download the CiviCRM-Symfony source tree (eg to /var/www/d7/civicrm-symfony)
-
+2) Download the CiviCRM-Symfony source tree (eg to /var/www/d7/civicrm-symfony)
 ```bash
 cd /var/www/d7
 git clone git://github.com/totten/civicrm-symfony.git
@@ -15,14 +14,9 @@ cd civicrm-symfony
 cp app/config/parameters.yml.dist app/config/parameters.yml
 ```
 
-3. Update parameters.yml
+3) Update app/config/parameters.yml, esp. "civicrm_settings_path"
 
-```yml
-TODO
-```
-
-4. Update civicrm.settings.php with this directive:
-
+4) Update civicrm.settings.php with this directive:
 ```php
 define('CIVICRM_SYMFONY_PATH', '/var/www/d7/civicrm-symfony');
 ```

@@ -5,7 +5,7 @@ namespace Civi\FrameworkBundle;
 class CiviCRM {
     static $initialized;
 
-    function __construct($settingsPath = '/var/aegir/platforms/civicrm-4.0/sites/sco.civisys.think.hm/civicrm.settings.php')
+    function __construct($settingsPath)
     {
         if (self::$initialized) {
             return;

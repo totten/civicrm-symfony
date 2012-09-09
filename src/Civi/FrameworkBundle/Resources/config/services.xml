@@ -21,12 +21,17 @@
         <parameter key="router.options.matcher_class">Civi\FrameworkBundle\UrlMatcher</parameter>
         <parameter key="router.options.matcher_base_class">Civi\FrameworkBundle\UrlMatcher</parameter>
     </parameters>
+    -->
 
     <services>
+        <service id="civi_framework.civicrm" class="Civi\FrameworkBundle\CiviCRM">
+          <argument>%civicrm_settings_path%</argument>
+        </service>
+    	<!--
         <service id="civi_framework.controller_resolver" class="Civi\FrameworkBundle\CiviControllerResolver">
             <argument type="service" id="default.controller_resolver"/>
         </service>
+        -->
     </services>
-    -->
 
 </container>

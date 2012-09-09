@@ -27,6 +27,10 @@
         <service id="civi_framework.civicrm" class="Civi\FrameworkBundle\CiviCRM">
           <argument>%civicrm_settings_path%</argument>
         </service>
+        <service id="civi_framework.routing_loader" class="Civi\FrameworkBundle\Routing\MenuLoader">
+            <argument type="service" id="civi_framework.civicrm" />
+            <tag name="routing.loader"></tag>
+        </service>
     	<!--
         <service id="civi_framework.controller_resolver" class="Civi\FrameworkBundle\CiviControllerResolver">
             <argument type="service" id="default.controller_resolver"/>

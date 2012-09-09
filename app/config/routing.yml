@@ -2,6 +2,10 @@ CiviFrameworkBundle:
     resource: "@CiviFrameworkBundle/Resources/config/routing.xml"
     prefix:   /civicrm
 
+CiviFrameworkBundle:
+    resource: .
+    type:     civicrm_menu
+
 CiviAdminBundle:
     resource: "@CiviAdminBundle/Controller/"
     type:     annotation

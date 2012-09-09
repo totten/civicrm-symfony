@@ -8,13 +8,4 @@
         <default key="_controller">CiviFrameworkBundle:Default:index</default>
     </route>
     -->
-    <route id="CiviFrameworkBundle_1" pattern="/admin">
-        <default key="_controller">CiviFrameworkBundle:Legacy:adapt</default>
-    </route>
-    <route id="CiviFrameworkBundle_2" pattern="/admin/">
-        <default key="_controller">CiviFrameworkBundle:Legacy:adapt</default>
-    </route>
-    <route id="CiviFrameworkBundle_3" pattern="/admin/setting/debug">
-        <default key="_controller">CiviFrameworkBundle:Legacy:adapt</default>
-    </route>
 </routes>

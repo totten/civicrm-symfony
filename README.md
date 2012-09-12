@@ -6,17 +6,20 @@ Symfony. It is currently being tested with Drupal 7.
 
 1) Install CiviCRM on Drupal per usual (using http://svn.civicrm.org/civicrm/branches/trunk.s2)
 
-2) Download the CiviCRM-Symfony source tree (eg to /var/www/d7/civicrm-symfony)
+2) Install Composer (http://getcomposer.org/download/)
+
+3) Download the CiviCRM-Symfony source tree (eg to /var/www/d7/civicrm-symfony)
 ```bash
 cd /var/www/d7
 git clone git://github.com/totten/civicrm-symfony.git
 cd civicrm-symfony
 cp app/config/parameters.yml.dist app/config/parameters.yml
+composer install
 ```
 
-3) Update app/config/parameters.yml, esp. "civicrm_settings_path"
+4) Update app/config/parameters.yml, esp. "civicrm_settings_path"
 
-4) Update civicrm.settings.php with this directive:
+5) Update civicrm.settings.php with this directive:
 ```php
 define('CIVICRM_SYMFONY_PATH', '/var/www/d7/civicrm-symfony');
 ```

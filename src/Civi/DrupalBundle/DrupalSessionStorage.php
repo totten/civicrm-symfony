@@ -90,9 +90,14 @@ class DrupalSessionStorage extends NativeSessionStorage
      */
     public function start()
     {
-        if (!function_exists('drupal_bootstrap') || drupal_bootstrap() != DRUPAL_BOOTSTRAP_FULL) {
+      if ($this->started && !$this->closed) {
+        return true;
+      }
+
+      if (!function_exists('drupal_bootstrap') || drupal_bootstrap() != DRUPAL_BOOTSTRAP_FULL) {
           throw new \Exception('Drupal must be pre-initialized!');
-        }
+      }
+      return true;
     }
 
     /**

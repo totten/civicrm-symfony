@@ -20,11 +20,7 @@
     <parameters>
         <!-- NativeSessionHandler doesn't do anything, and that's great! Drupal core does the work. -->
         <parameter key="session.handler.native_file.class">Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeSessionHandler</parameter>
+        <parameter key="session.storage.native.class">Civi\DrupalBundle\DrupalSessionStorage</parameter>
     </parameters>
-
-    <services>
-        <service id="civicrm.session.drupal" class="Civi\DrupalBundle\DrupalSessionStorage">
-        </service>
-    </services>
 
 </container>

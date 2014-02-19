@@ -1,3 +1,8 @@
+civi_drest:
+    resource: "@CiviDrestBundle/Controller/"
+    type:     annotation
+    prefix:   /civicrm/drest
+
 CiviFrameworkBundle:
     resource: "@CiviFrameworkBundle/Resources/config/routing.xml"
     prefix:   /civicrm
